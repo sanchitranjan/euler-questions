@@ -3,14 +3,14 @@
 Find the largest palindrome made from the product of two 3-digit numbers.*/
 public class lpalinproduct
 {
-
-	public static void main(String[] args) 
+   public static void main(String[] args) 
 	{
-		int i,j,dig,r=0,n=0,m,max=0  ;
-		for(i=100;i<=999;i++)
+		int i,j,n,m,dig,r=0,max=0;
+		for(i=1000;i>100;i--)
 		{
-			for(j=101;j<=999;j++)
+			for(j=999;j>100;j--)
 			{
+				 
 			  n=i*j;
 			  m=n;
 			  while(m!=0)
@@ -19,16 +19,14 @@ public class lpalinproduct
 				r=r*10+dig;
 				m=m/10;
 			  }
-			  if(r==n)
-			 {
-			     if(n>max)
-			    	 max=n;
+			  if(r==n) 
+				  if(r>max)
+					  max=r;
+			   r=0;
 			 }
-			  r=0;
-	    	}
 		}
 		System.out.println("largest palindrome product="+max);
 
 	}
-
 }
+
