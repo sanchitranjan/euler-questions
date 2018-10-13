@@ -6,9 +6,9 @@ public class lpalinproduct
    public static void main(String[] args) 
 	{
 		int i,j,n,m,dig,r=0,max=0;
-		for(i=1000;i>100;i--)
+		for(i=999;i>=100;i--)
 		{
-			for(j=999;j>100;j--)
+			for(j=999;j>=100;j--)
 			{
 				 
 			  n=i*j;
@@ -29,4 +29,3 @@ public class lpalinproduct
 
 	}
 }
-
